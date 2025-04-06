@@ -1,0 +1,117 @@
+
+:root {
+    --primary-color: #0bdeff;
+    --secondary-color: #ed87c6;
+    --input-bg-color: #f1f1f1;
+    --button-bg-color: #214aee;
+    --button-hover-color: #162d88;
+    --text-color: #333;
+    --error-color: #ff5e57;
+    --border-color: #ccc;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: var(--text-color);
+}
+
+
+
+.form-container {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2.4rem;
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+}
+
+
+label {
+    font-size: 1.4rem;
+    display: block;
+    color: var(--text-color);
+    text-align: left;
+    margin-top: 1rem;
+    margin-bottom: .5rem;
+}
+
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.6rem;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    background-color: var(--input-bg-color);
+    color: var(--text-color);
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border-color: var(--primary-color);
+}
+
+
+button[type="submit"] {
+    background-color: var(--button-bg-color);
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: bold;
+    padding: 1rem;
+    margin-top: 2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+}
+
+button[type="submit"]:hover {
+    background-color: var(--button-hover-color);
+}
+
+
+.error-message {
+    color: var(--error-color);
+    font-size: 1.4rem;
+    margin-top: 1rem;
+}
+
+
+@media (max-width: 768px) {
+    body {
+        padding: 2rem;
+    }
+
+    .form-container {
+        padding: 1.5rem;
+        width: 90%;
+    }
+}
+
+
+
+
+
